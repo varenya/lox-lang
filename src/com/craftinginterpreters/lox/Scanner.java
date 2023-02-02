@@ -88,7 +88,7 @@ public class Scanner {
     }
     advance();
     String value = source.substring(start + 1, current - 1);
-    tokens.add(new Token(STRING, value, null, line));
+    addToken(STRING, value);
   }
 
   private void identifier() {
