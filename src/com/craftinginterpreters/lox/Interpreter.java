@@ -1,6 +1,8 @@
 package com.craftinginterpreters.lox;
 
-public class Interpreter implements Expr.Visitor<Object> {
+import java.util.List;
+
+public class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
   @Override
   public Object visitLiteralExpr(Expr.Literal literal) {
     return literal.value;
@@ -64,6 +66,19 @@ public class Interpreter implements Expr.Visitor<Object> {
     return null;
   }
 
+  @Override
+  public Void visitExpressionStmt(Stmt.Expression stmtExpr) {
+    evaluate(stmtExpr.expr);
+    return null;
+  }
+
+  @Override
+  public Void visitPrintExprStmt(Stmt.PrintExpr printExpr) {
+    Object value = evaluate(printExpr.expr);
+    System.out.println(stringify(value));
+    return null;
+  }
+
   private boolean isTruthy(Object value) {
     if (value == null) {
       return false;
@@ -105,12 +120,16 @@ public class Interpreter implements Expr.Visitor<Object> {
   private Object evaluate(Expr expr) {
     return expr.accept(this);
   }
+  private void execute(Stmt stmt) {
+    stmt.accept(this);
+  }
 
-  void interpret(Expr expr) {
+  void interpret(List<Stmt> stmts) {
     try {
 
-      Object value = evaluate(expr);
-      System.out.println(stringify(value));
+      for(Stmt stmt: stmts)  {
+        execute(stmt);
+      }
     } catch (RuntimeError error) {
       Lox.runtimeError(error);
     }
