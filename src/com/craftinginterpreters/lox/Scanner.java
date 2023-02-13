@@ -99,7 +99,9 @@ public class Scanner {
     if (type == null) {
       addToken(IDENTIFIER);
     }
-    addToken(type);
+    else {
+      addToken(type);
+    }
   }
 
   private boolean isDigit(char c) {
@@ -207,7 +209,7 @@ public class Scanner {
   }
 
   public static void main(String[] args) {
-    String source = "{{   }}";
+    String source = "var a = 1;";
     Scanner s = new Scanner(source);
     List<Token> list = s.scanTokens();
     for (Token token : list) {

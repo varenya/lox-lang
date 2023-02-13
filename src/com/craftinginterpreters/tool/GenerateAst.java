@@ -20,16 +20,19 @@ public class GenerateAst {
             "Binary   : Expr left, Token operator, Expr right",
             "Grouping : Expr expression",
             "Literal  : Object value",
-            "Unary    : Token operator, Expr right"));
+            "Unary    : Token operator, Expr right",
+            "Assign    : Token name, Expr value",
+            "Variable    : Token name"));
+
     defineAst(
-            outputDir,
-            "Stmt",
-            Arrays.asList(
-                    "Expression   : Expr expr",
-                    "PrintExpr  : Expr expr"));
+        outputDir,
+        "Stmt",
+        Arrays.asList(
+            "Block   : List<Stmt> statements",
+            "Expression   : Expr expr",
+            "PrintExpr  : Expr expr",
+            "Var  : Token name, Expr initializer"));
   }
-
-
 
   private static void defineAst(String outputDir, String baseName, List<String> types)
       throws IOException {
@@ -37,6 +40,7 @@ public class GenerateAst {
     PrintWriter writer = new PrintWriter(path, StandardCharsets.UTF_8);
 
     writer.println("package com.craftinginterpreters.lox;");
+    writer.println("import java.util.List;");
     writer.println();
     writer.println("abstract class " + baseName + " {");
 
@@ -56,14 +60,21 @@ public class GenerateAst {
   }
 
   private static void defineVisitor(PrintWriter writer, String baseName, List<String> types) {
-      writer.println("        interface Visitor<R> {");
+    writer.println("        interface Visitor<R> {");
 
-      for(String type: types) {
-          String typeName = type.split(":")[0].trim();
-          writer.println("   R visit" + typeName + baseName + "(" + typeName + " " + baseName.toLowerCase() + " );");
-      }
-      writer.println("    }");
-
+    for (String type : types) {
+      String typeName = type.split(":")[0].trim();
+      writer.println(
+          "   R visit"
+              + typeName
+              + baseName
+              + "("
+              + typeName
+              + " "
+              + baseName.toLowerCase()
+              + " );");
+    }
+    writer.println("    }");
   }
 
   private static void defineType(
@@ -92,8 +103,6 @@ public class GenerateAst {
     writer.println("    <R> R accept(Visitor<R> visitor) {");
     writer.println("       return visitor.visit" + typeName + baseName + "(this);");
     writer.println("        }");
-
-
 
     writer.println(" }");
   }

@@ -15,9 +15,19 @@ public class Parser {
     this.tokens = tokens;
   }
 
+  private Stmt declaration() {
+    if (match(VAR)) {
+      return varStatement();
+    }
+    return statement();
+  }
+
   private Stmt statement() {
     if (match(PRINT)) {
       return printStatement();
+    }
+    if(match(LEFT_BRACE)) {
+      return new Stmt.Block(block());
     }
     return expressionStatement();
   }
@@ -28,6 +38,25 @@ public class Parser {
     return new Stmt.PrintExpr(value);
   }
 
+  private List<Stmt> block() {
+    List<Stmt> statements = new ArrayList<>();
+    while(!check(RIGHT_BRACE) && !isAtEnd()) {
+      statements.add(declaration());
+    }
+    consume(RIGHT_BRACE, "Expect } after to end block");
+    return statements;
+  }
+
+  private Stmt varStatement() {
+    Token name = consume(IDENTIFIER, "Expected variable name");
+    Expr initializer = null;
+    if (match(EQUAL)) {
+      initializer = expression();
+    }
+    consume(SEMICOLON, "Expected variable declaration to end with ;");
+    return new Stmt.Var(name, initializer);
+  }
+
   private Stmt expressionStatement() {
     Expr expression = expression();
     consume(SEMICOLON, "Expect ; after value");
@@ -35,7 +64,21 @@ public class Parser {
   }
 
   private Expr expression() {
-    return equality();
+    return assignment();
+  }
+
+  private Expr assignment() {
+    Expr expr = equality();
+    if (match(EQUAL)) {
+      Token equal = previous();
+      Expr value = assignment();
+      if (expr instanceof Expr.Variable) {
+        Token name = ((Expr.Variable) expr).name;
+        return new Expr.Assign(name, value);
+      }
+      throw error(equal, "invalid assignment expression");
+    }
+    return expr;
   }
 
   private Expr equality() {
@@ -100,6 +143,10 @@ public class Parser {
       consume(RIGHT_PAREN, "Expect ')' after expression.");
       return new Expr.Grouping(expr);
     }
+    if (match(IDENTIFIER)) {
+      return new Expr.Variable(previous());
+    }
+    System.out.println(peek().type);
     throw error(peek(), "Expect expression.");
   }
 
@@ -150,7 +197,7 @@ public class Parser {
     try {
       List<Stmt> statements = new ArrayList<>();
       while (!isAtEnd()) {
-        statements.add(statement());
+        statements.add(declaration());
       }
       return statements;
     } catch (ParseError error) {

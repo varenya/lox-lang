@@ -6,6 +6,8 @@ abstract class Expr {
    R visitGroupingExpr(Grouping expr );
    R visitLiteralExpr(Literal expr );
    R visitUnaryExpr(Unary expr );
+   R visitAssignExpr(Assign expr );
+   R visitVariableExpr(Variable expr );
     }
 
 static class Binary extends Expr {
@@ -63,6 +65,34 @@ static class Unary extends Expr {
     @Override
     <R> R accept(Visitor<R> visitor) {
        return visitor.visitUnaryExpr(this);
+        }
+ }
+
+static class Assign extends Expr {
+       Assign( Token name, Expr value ) {
+            this.name = name;
+            this.value = value;
+}
+
+      final Token name;
+      final Expr value;
+
+    @Override
+    <R> R accept(Visitor<R> visitor) {
+       return visitor.visitAssignExpr(this);
+        }
+ }
+
+static class Variable extends Expr {
+       Variable( Token name ) {
+            this.name = name;
+}
+
+      final Token name;
+
+    @Override
+    <R> R accept(Visitor<R> visitor) {
+       return visitor.visitVariableExpr(this);
         }
  }
 
