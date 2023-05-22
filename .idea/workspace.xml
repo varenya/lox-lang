@@ -1,576 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6565b783-d46c-4566-baad-8b387336accc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java" afterDir="false" />
+    <list default="true" id="f4ebcc74-012c-4482-afe0-3bfc06fc5d01" name="Changes" comment="Format code better using latest idea">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lox-lang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lox-lang.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4590">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/TokenType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#1624#1625#0" expanded="true" />
-                <element signature="e#4281#4282#0" expanded="true" />
-                <element signature="e#4347#4348#0" expanded="true" />
-                <element signature="e#4417#4418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-              <folding>
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
-              <folding>
-                <element signature="e#2485#2486#0" expanded="true" />
-                <element signature="e#2528#2529#0" expanded="true" />
-                <element signature="e#4637#4638#0" expanded="true" />
-                <element signature="e#4671#4672#0" expanded="true" />
-                <element signature="e#4708#4709#0" expanded="true" />
-                <element signature="e#4735#4736#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1863">
-              <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-              <folding>
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1233#1234#0" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Class" />
+        <option value="Varenya Thyagaraj &lt;varen90@gmail.com&gt;" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>advance</find>
-      <find>AstPr</find>
-      <find>runFile</find>
-      <find>expect expression</find>
-      <find>keywords</find>
-      <find>primary</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/TokenType.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Token.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" />
-        <option value="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" />
-      </list>
-    </option>
+  <component name="ProjectId" id="2Q9uD4GpnurB4khft5ZnhemRPny" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="2560" />
-    <option name="height" value="1330" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Lox">
-    <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.AstPrinter" />
-      <module name="lox-lang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.craftinginterpreters.lox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenerateAst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.tool.GenerateAst" />
-      <module name="lox-lang" />
-      <option name="PROGRAM_PARAMETERS" value="src/com/craftinginterpreters/lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.craftinginterpreters.tool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.Lox" />
-      <module name="lox-lang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.craftinginterpreters.lox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="lox-lang" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scanner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.craftinginterpreters.lox.Scanner" />
-      <module name="lox-lang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.craftinginterpreters.lox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.GenerateAst" />
-      <item itemvalue="Application.Lox" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Scanner" />
-      <item itemvalue="Application.AstPrinter" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Lox" />
-        <item itemvalue="Application.GenerateAst" />
-        <item itemvalue="Application.Scanner" />
-        <item itemvalue="Application.AstPrinter" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6565b783-d46c-4566-baad-8b387336accc" name="Default Changelist" comment="" />
-      <created>1663607895278</created>
+      <changelist id="f4ebcc74-012c-4482-afe0-3bfc06fc5d01" name="Changes" comment="" />
+      <created>1684777998899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663607895278</updated>
-      <workItem from="1663607898140" duration="3347000" />
-      <workItem from="1663769584026" duration="2799000" />
-      <workItem from="1663772462491" duration="1050000" />
-      <workItem from="1664021306826" duration="1906000" />
-      <workItem from="1664632672519" duration="114000" />
-      <workItem from="1674476896161" duration="23664000" />
-      <workItem from="1675398521406" duration="8592000" />
-      <workItem from="1675754316279" duration="6650000" />
-      <workItem from="1676306606126" duration="2283000" />
+      <updated>1684777998899</updated>
+      <workItem from="1684778000025" duration="834000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50405000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="2560" height="1330" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2599681" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2811212" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297609" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32893652" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" x="0" y="0" width="590" height="1130" id="Documentation" order="9" side_tool="true" weight="0.32974482" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/charset/StandardCharsets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/sun/nio/cs/UTF_8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4590">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/TokenType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/AstPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/tool/GenerateAst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Stmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-          <folding>
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#4281#4282#0" expanded="true" />
-            <element signature="e#4347#4348#0" expanded="true" />
-            <element signature="e#4417#4418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Environment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
-          <folding>
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#4637#4638#0" expanded="true" />
-            <element signature="e#4671#4672#0" expanded="true" />
-            <element signature="e#4708#4709#0" expanded="true" />
-            <element signature="e#4735#4736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Format code better using latest idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Format code better using latest idea" />
   </component>
 </project>
