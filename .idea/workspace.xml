@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4ebcc74-012c-4482-afe0-3bfc06fc5d01" name="Changes" comment="Format code better using latest idea">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f4ebcc74-012c-4482-afe0-3bfc06fc5d01" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lox-lang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lox-lang.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Expr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Lox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/craftinginterpreters/lox/RuntimeError.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +20,10 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Q9uD4GpnurB4khft5ZnhemRPny" />
   <component name="ProjectViewState">
@@ -50,8 +41,18 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,8 +61,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684777998899</updated>
-      <workItem from="1684778000025" duration="834000" />
+      <workItem from="1684778000025" duration="1045000" />
     </task>
+    <task id="LOCAL-00001" summary="Format code better using latest idea">
+      <created>1684779157960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684779157960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
